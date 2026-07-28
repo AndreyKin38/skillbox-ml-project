@@ -1,0 +1,20 @@
+
+services:
+
+  db:
+    image: postgres:latest
+    restart: always
+    ports:
+      - '5436:5432'
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: client_db
+
+  cache:
+    image: redis:8.2.8-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+
+

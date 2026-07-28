@@ -1,0 +1,31 @@
+[project]
+name = "ml-project-poetry"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "andreykin",email = "andrey.kin.1984@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.139.2,<0.140.0)",
+    "scikit-learn (>=1.9.0,<2.0.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "catboost (>=1.2.10,<2.0.0)",
+    "dill (>=0.4.1,<0.5.0)",
+    "uvicorn (>=0.51.0,<0.52.0)",
+    "pydantic-settings (>=2.14.2,<3.0.0)",
+    "sqlalchemy (>=2.0.51,<3.0.0)",
+    "alembic (>=1.18.5,<2.0.0)",
+    "psycopg2 (>=2.9.12,<3.0.0)",
+    "pyarrow (>=25.0.0,<26.0.0)",
+    "fastparquet (>=2026.5.0,<2027.0.0)",
+    "redis (>=8.0.1,<9.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ml_project_poetry", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

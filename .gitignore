@@ -1,0 +1,16 @@
+.venv
+venv/
+.idea
+__pycache__/
+*.local*
+*.log
+.DS_Store
+.ipynb_checkpoints
+spark-warehouse
+model/catboost_info
+*.pkl
+*.parquet
+*.pq
+*.csv
+
+
